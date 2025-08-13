@@ -1,2 +1,4 @@
-# loginSystem
-Sistema simples de login com firebase
+# Instruções
+No momento que a aplicação começa a rodar, a Home é aberta, lá você escolhe em se registrar ou realizar login, caso não tenha uma conta se registre e logo após faça o login, após estar logado, você terá acesso as páginas de Dashboard e Profile, nessas duas páginas conseguirá se deslogar da sua conta e voltar para a Home.
+# Sistema de Rotas e Autenticação
+Sistema de autenticação usado com o firebase, registro usando createUserWithEmailAndPassword, login usando signInUserWithEmailAndPassword, para verificação se o usuário está autenticado ou não foi criado um contexto para poder ser usado em todos os componentes do projeto, componente de logout foi usado o signOut. Para rotas foi usado BrowserRouter, Routes e Route normalmente, porém com uma validação se o usuário existe, vai para as rotas com autenticação, caso não exista, vai para as rotas sem autenticação.
